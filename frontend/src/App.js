@@ -76,8 +76,8 @@ function App() {
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
-        <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+        <header className='fixed z-50 w-screen'>
+          <Navbar className='w-full bg-orange-200' bg="dark" variant="dark" expand="lg">
             <Container>
               <Button
                 variant="dark"
@@ -87,12 +87,13 @@ function App() {
               </Button>
 
               <LinkContainer to="/">
-                <Navbar.Brand>amazona</Navbar.Brand>
+                <Navbar.Brand className='text-headingColor text-xl font-bold'>Food Shop</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
+                  
                   <Link to="/cart" className="nav-link">
                     Cart
                     {cart.cartItems.length > 0 && (
