@@ -1,7 +1,6 @@
-# MERN AMAZONA
+# MERN FOODAPP
 
-![amazona](/frontend/public/images/amazona.jpg)
-
+![FoodApp]
 
 ## Run Locally
 
