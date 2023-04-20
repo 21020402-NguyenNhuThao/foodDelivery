@@ -76,8 +76,8 @@ function App() {
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
-        <header className='fixed z-50 w-screen'>
-          <Navbar className='w-full bg-orange-200' bg="dark" variant="dark" expand="lg">
+        <header>
+          <Navbar expand="lg">
             <Container>
               <Button
                 variant="dark"
@@ -85,15 +85,13 @@ function App() {
               >
                 <i className="fas fa-bars"></i>
               </Button>
-
               <LinkContainer to="/">
-                <Navbar.Brand className='text-headingColor text-xl font-bold'>Food Shop</Navbar.Brand>
+                <Navbar.Brand>Chicken VNU</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
-                  
                   <Link to="/cart" className="nav-link">
                     Cart
                     {cart.cartItems.length > 0 && (
@@ -152,7 +150,7 @@ function App() {
               : 'side-navbar d-flex justify-content-between flex-wrap flex-column'
           }
         >
-          <Nav className="flex-column text-white w-100 p-2">
+          <Nav className="flex-column w-100 p-2">
             <Nav.Item>
               <strong>Categories</strong>
             </Nav.Item>
