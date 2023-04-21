@@ -30,8 +30,12 @@ main {
   justify-content: center;
 }
 
+.rating {
+  margin-bottom: 1rem;
+}
+
 .rating span {
-  color: #ffc000;
+  color: #ff8400;
 }
 
 .product {
@@ -104,11 +108,14 @@ main {
 
 .nav-item .nav-link {
   color: #675d50;
+  transition: transform 0.4s;
 }
 
 .nav-item .nav-link:hover {
   color: #32813e;
   text-decoration: underline;
+  transform: translateX(4px);
+  transition: transform 0.4s;
 }
 
 #q {
@@ -181,6 +188,44 @@ button.thumbnail {
 }
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 2px 4px 2px rgb(50 129 62 / 40%);
+  box-shadow: 0px 2px 4px 2px rgba(130, 193, 139, 0.4);
   transition: transform 0.3s;
+}
+.card-text {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.5rem;
+  font-weight: bold;
+}
+.product-link {
+  text-decoration: none;
+  color: #df2e38;
+}
+
+.product-link .card-title::after {
+  content: '';
+  position: absolute;
+  left: 30%;
+  display: inline-block;
+  height: 1em;
+  width: 70%;
+  border-bottom: 0.12rem solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.product-link:hover .card-title::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.card-img-top {
+  padding: 1.2rem;
+}
+
+.homeScreenTitle {
+  color: darkgreen;
 }
