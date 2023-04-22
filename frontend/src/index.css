@@ -185,6 +185,7 @@ button.thumbnail {
 /*card*/
 .card {
   transition: transform 0.3s;
+  border: 1px solid #c3f0cb;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -202,7 +203,7 @@ button.thumbnail {
   color: #df2e38;
 }
 
-.product-link .card-title::after {
+.card-title::after {
   content: '';
   position: absolute;
   left: 30%;
@@ -217,7 +218,7 @@ button.thumbnail {
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-.product-link:hover .card-title::after {
+.card:hover .card-title::after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -228,4 +229,31 @@ button.thumbnail {
 
 .homeScreenTitle {
   color: darkgreen;
+}
+
+.homepage-section__title {
+  font-size: 4.3rem;
+  margin-bottom: 12%;
+}
+.homepage-section__des {
+  font-size: 2rem;
+  margin-bottom: 6%;
+}
+.chef-img {
+  width: -webkit-fill-available;
+}
+.go-to-menu {
+  text-decoration: none;
+  background-color: #29c540;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.go-to-menu:hover {
+  color: #000000;
+}
+
+.text-column {
+  margin-bottom: 10%;
 }

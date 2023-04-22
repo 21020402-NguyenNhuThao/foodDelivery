@@ -45,9 +45,32 @@ function HomeScreen() {
   return (
     <div>
       <Helmet>
-        <title>Amazona</title>
+        <title>Chicken VNU</title>
       </Helmet>
-      <h1 className="homeScreenTitle">Featured Products</h1>
+
+      <div className="row justify-content-between align-items-center">
+        {/* <img src="images/heroBg.png" alt="Image" /> */}
+        <div class="text-column col-xl-7 col-lg-7 col-md-7 col-sm-7">
+          <h1 class="homepage-section__title">What's going on Today?</h1>
+          <h2 class="homepage-section__des">
+            Are you looking for something to eat, let check the menu of Chicken
+            VNU shop, you will find a lot of special food. Let's enjoy it!
+          </h2>
+
+          <a className="go-to-menu" href="#homeScreenTitle">
+            Go to the Menu
+          </a>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 d-none d-sm-block">
+          <div class="chef">
+            <img src="/images/chef2.png" alt="" class="chef-img" />
+          </div>
+        </div>
+      </div>
+
+      <h1 className="homeScreenTitle" id="homeScreenTitle">
+        Featured Products
+      </h1>
       <div className="products">
         {loading ? (
           <LoadingBox />
